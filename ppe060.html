@@ -9,20 +9,81 @@
   <!-- CSS -->
   <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
   <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
+	
+<br><br>
+
+  <style>
+    body {min-height: auto !important;}
+
+    /* =========================
+       BOTONES "VER MÁS"
+    ========================== */
+    .btn-gob {
+      background-color: #a57f2c !important;
+      border-color: #a57f2c !important;
+      color: #fff !important;
+    }
+
+    .btn-gob:hover {
+      background-color: #8c6a24 !important;
+      border-color: #8c6a24 !important;
+    }
+
+    /* =========================
+       CARRUSEL - AJUSTES ESPACIO
+    ========================== */
+    #carouselDocs {
+      overflow: hidden;
+    }
+
+    .carousel-inner {
+      height: auto !important;
+    }
+
+    .carousel-item {
+      height: auto !important;
+      min-height: 0 !important;
+      padding-bottom: 10px;
+    }
+
+    .carousel-item > .row {
+      align-items: flex-start;
+    }
+
+    .carousel-item .col-md-4 {
+      margin-bottom: 0;
+    }
+
+    /* =========================
+       FLECHAS DEL CARRUSEL
+    ========================== */
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 6%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: brightness(0) saturate(100%) invert(78%) sepia(32%) saturate(404%) hue-rotate(5deg) brightness(95%) contrast(90%);
+      background-color: rgba(0,0,0,0.3);
+      border-radius: 50%;
+      padding: 18px;
+    }
+
+  </style>
 </head>
 
 <body>
+
 <div class="container">
   <h3>Programa presupuestario (Pp) E060 "Servicios de atención a víctimas"</h3>
   <hr class="red">
 </div>
-	<div class="container">
+
+<div class="container">
   <div id="carouselDocs" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
 
     <div class="carousel-inner">
-	<hr>
-	<hr>
-
 
       <!-- SLIDE 1 -->
       <div class="carousel-item active">
@@ -111,42 +172,17 @@
     <button class="carousel-control-next" type="button" data-bs-target="#carouselDocs" data-bs-slide="next">
       <span class="carousel-control-next-icon"></span>
     </button>
-	<hr>
-	<hr>
+
+<br><br>
+
   </div>
 </div>
-  <!-- JS -->
-  <script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
+ </div>
+     
+<br><br>
+
 </body>
-<style>
-body {min-height: auto !important;}
-
-/* === FIX REAL DEL ESPACIO EN BLANCO DEL CARRUSEL === */
-
-#carouselDocs {
-  overflow: hidden;
-}
-
-/* Evita que el carousel reserve altura extra */
-.carousel-inner {
-  height: auto !important;
-}
-
-/* CLAVE: evita alturas fantasma del slide */
-.carousel-item {
-  height: auto !important;
-  min-height: 0 !important;
-  padding-bottom: 10px;
-}
-
-/* fuerza a que cada slide solo mida su contenido */
-.carousel-item > .row {
-  align-items: flex-start;
-}
-
-/* elimina “aire” extra del grid */
-.carousel-item .col-md-4 {
-  margin-bottom: 0;
-}
-</style>
+</html>
